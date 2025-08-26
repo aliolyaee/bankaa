@@ -113,7 +113,7 @@ export function TestimonialsSection() {
                       {TESTIMONIALS[currentTestimonial].name}
                     </div>
                     <div className="text-white/80 mt-1">
-                      {TESTIMONIALS[currentTestimonial].role}
+                      {TESTIMONIALS[currentTestimonial].title}
                     </div>
                   </div>
                 </div>

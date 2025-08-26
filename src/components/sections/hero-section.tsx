@@ -87,7 +87,7 @@ export function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 h-14 px-8 text-lg rounded-xl backdrop-blur"
+                className="border-white/30 text-white bg-white/5 hover:bg-white/10 h-14 px-8 text-lg rounded-xl backdrop-blur"
               >
                 <PlayCircle className="ml-2 h-5 w-5" />
                 مشاهده دمو

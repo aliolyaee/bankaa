@@ -62,8 +62,8 @@ const DesktopNav = () => {
   const pathname = usePathname();
   return (
     <NavigationMenu>
-      <NavigationMenuList>
-        {NAV_LINKS.map((link) =>
+      <NavigationMenuList className="flex-row-reverse">
+        {NAV_LINKS.map((link, index) =>
           link.children ? (
             <NavigationMenuItem key={link.label}>
               <NavigationMenuTrigger>{link.label}</NavigationMenuTrigger>
@@ -82,7 +82,7 @@ const DesktopNav = () => {
               </NavigationMenuContent>
             </NavigationMenuItem>
           ) : (
-            <NavigationMenuItem key={link.href}>
+            <NavigationMenuItem key={link.href} className="ml-1">
               <Link href={link.href} legacyBehavior passHref>
                 <NavigationMenuLink
                   className={navigationMenuTriggerStyle()}
