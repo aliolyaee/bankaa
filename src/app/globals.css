@@ -8,31 +8,39 @@ body {
 
 @layer base {
   :root {
-    --background: 120 9% 89%;
+    /* بانکا - پالت رنگی جدید */
+    --background: 0 0% 100%;
     --foreground: 120 33% 10%;
-    --card: 120 9% 95%;
+    --card: 0 0% 100%;
     --card-foreground: 120 33% 10%;
-    --popover: 120 9% 95%;
+    --popover: 0 0% 100%;
     --popover-foreground: 120 33% 10%;
-    --primary: 120 33% 30%;
-    --primary-foreground: 120 9% 98%;
-    --secondary: 120 9% 80%;
+    --primary: 158 64% 52%;
+    /* سبز امرالد #059669 */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 210 40% 98%;
+    /* خاکستری روشن #F3F4F6 */
     --secondary-foreground: 120 33% 15%;
-    --muted: 120 9% 80%;
-    --muted-foreground: 120 20% 35%;
-    --accent: 180 20% 50%;
-    --accent-foreground: 120 9% 98%;
-    --destructive: 0 84.2% 60.2%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 186 57% 50%;
+    /* آبی نعنایی #06B6D4 */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 120 9% 80%;
-    --input: 120 9% 75%;
-    --ring: 120 33% 30%;
-    --chart-1: 120 33% 30%;
-    --chart-2: 180 20% 50%;
-    --chart-3: 45 85% 60%; /* Gold Accent */
-    --chart-4: 210 30% 55%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 158 64% 52%;
+    --chart-1: 158 64% 52%;
+    /* سبز امرالد */
+    --chart-2: 186 57% 50%;
+    /* آبی نعنایی */
+    --chart-3: 45 93% 47%;
+    /* طلایی #F59E0B */
+    --chart-4: 221 39% 11%;
+    /* آبی دریایی */
     --chart-5: 0 0% 50%;
-    --radius: 0.5rem;
+    --radius: 0.75rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -42,29 +50,30 @@ body {
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
   .dark {
     --background: 120 10% 10%;
-    --foreground: 120 9% 89%;
+    --foreground: 0 0% 95%;
     --card: 120 10% 15%;
-    --card-foreground: 120 9% 89%;
+    --card-foreground: 0 0% 95%;
     --popover: 120 10% 10%;
-    --popover-foreground: 120 9% 89%;
-    --primary: 120 33% 70%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 158 64% 52%;
     --primary-foreground: 120 33% 10%;
     --secondary: 120 10% 20%;
-    --secondary-foreground: 120 9% 95%;
+    --secondary-foreground: 0 0% 95%;
     --muted: 120 10% 20%;
-    --muted-foreground: 120 9% 60%;
-    --accent: 180 25% 60%;
+    --muted-foreground: 215 16% 65%;
+    --accent: 186 57% 50%;
     --accent-foreground: 120 10% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 120 10% 20%;
     --input: 120 10% 25%;
-    --ring: 120 33% 70%;
-    --chart-1: 120 33% 70%;
-    --chart-2: 180 25% 60%;
-    --chart-3: 45 85% 70%;
+    --ring: 158 64% 52%;
+    --chart-1: 158 64% 52%;
+    --chart-2: 186 57% 50%;
+    --chart-3: 45 93% 47%;
     --chart-4: 210 35% 65%;
     --chart-5: 0 0% 70%;
     --sidebar-background: 240 5.9% 10%;
@@ -82,7 +91,21 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* اضافه کردن کلاس‌های کاربردی بانکا */
+.banka-gradient-primary {
+  @apply bg-gradient-to-r from-primary to-accent;
+}
+
+.banka-gradient-hero {
+  @apply bg-gradient-to-br from-primary via-emerald-800 to-teal-900;
+}
+
+.banka-text-gradient {
+  @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
 }
