@@ -2,8 +2,124 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Regular */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-It.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-BoldIt.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Black */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Black Italic */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-BlackIt.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Thin */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Thin Italic */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-ThinIt.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-MediumIt.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* SemiBold Italic */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-SemiBoldIt.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Extra Light */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-ExLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Extra Light Italic */
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/AnjomanMaxFN-ExLightIt.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* سایر سبک‌های اختصاصی (Cn، Hv، Fat و ...) را می‌توان به همین شکل اضافه کرد */
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Anjoman", sans-serif;
 }
 
 @layer base {
